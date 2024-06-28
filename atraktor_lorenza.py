@@ -42,9 +42,9 @@ def set_axis_limits(ax, x_data, y_data, z_data, margin=0.1):
     ax.set_zlim([z_min, z_max])
 
 # Przykładowe wartości początkowe
-x0 = 0.1
-y0 = 0.1
-z0 = 0.1
+x0 = 1
+y0 = 1
+z0 = 1
 
 # Przedział czasu
 t = np.linspace(0, 1000, 100000)  # start, stop, gęstość punktów
