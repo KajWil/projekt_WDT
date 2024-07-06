@@ -8,7 +8,7 @@ s = 10
 b = 8/3
 r = 28
 
-# Przykładowe wartości początkowe
+# Warunki początkowe
 x0 = 1
 y0 = 1
 z0 = 1
