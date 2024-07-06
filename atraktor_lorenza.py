@@ -8,6 +8,11 @@ s = 10
 b = 8/3
 r = 28
 
+# Przykładowe wartości początkowe
+x0 = 1
+y0 = 1
+z0 = 1
+
 def uklad(u, t):
     x, y, z = u
     dxdt = s*(y - x)
@@ -40,11 +45,6 @@ def set_axis_limits(ax, x_data, y_data, z_data, margin=0.1):
     ax.set_xlim([x_min, x_max])
     ax.set_ylim([y_min, y_max])
     ax.set_zlim([z_min, z_max])
-
-# Przykładowe wartości początkowe
-x0 = 1
-y0 = 1
-z0 = 1
 
 # Przedział czasu
 t = np.linspace(0, 1000, 100000)  # start, stop, gęstość punktów

@@ -8,6 +8,11 @@ a = 0.2
 b = 0.2
 c = 5.7
 
+# Warunki początkowe
+x0 = 0
+y0 = 0
+z0 = 0
+
 def uklad(u, t):
     x, y, z = u
     dxdt = - y - z
@@ -34,10 +39,6 @@ s2z = (c - np.sqrt(c**2 - 4*a*b))/(2*a)
 print("Współrzędne pierwszego punktu stałego: ", s1x, s1y, s1z)
 print("Współrzędne drugiego punktu stałego: ",s2x, s2y, s2z)
 
-# Przykładowe wartości początkowe
-x0 = 0
-y0 = 0
-z0 = 0
 
 # Przedział czasu
 t = np.linspace(0, 1000, 10000)  # start, stop, gęstość punktów
